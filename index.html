@@ -13,7 +13,12 @@
 <meta property="og:url" content="https://muhhhamkabeer.github.io/">
 <meta property="og:title" content="Muhammad Kabeer | Software engineer &amp; AI automation">
 <meta property="og:description" content="I build web apps, fix stuck projects and automate repetitive work with AI for small and growing businesses.">
+<meta property="og:image" content="https://muhhhamkabeer.github.io/images/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Muhammad Kabeer, software and AI automation engineer">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://muhhhamkabeer.github.io/images/og.png">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Muhammad Kabeer","jobTitle":"Software engineer","address":{"@type":"PostalAddress","addressLocality":"Rawalpindi","addressCountry":"PK"},"sameAs":["https://www.linkedin.com/in/muhammad-kabeer-07b07a2ba/","https://github.com/MUhHHAMKABEER"],"knowsAbout":["Laravel","PHP","React","Next.js","n8n","OpenAI","MySQL"]}
 </script>
@@ -48,7 +53,7 @@
   .display { font-family: Anton, sans-serif; font-weight: 400; text-transform: uppercase; line-height: .98; }
   .serif { font-family: "Instrument Serif", serif; }
   .serif-i { font-family: "Instrument Serif", serif; font-style: italic; text-transform: none; }
-  .eyebrow { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px; }
+  .eyebrow { font-weight: 400; font-size: 14px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); display: flex; align-items: center; gap: 10px; }
   .eyebrow::before { content: ""; width: 8px; height: 8px; background: var(--accent); }
   .btn { display: inline-flex; align-items: center; gap: 16px; background: var(--ink); color: var(--on-dark); padding: 10px 10px 10px 24px; border-radius: 999px; font-family: Anton, sans-serif; font-size: 16px; letter-spacing: .04em; text-decoration: none; }
   .btn span { width: 34px; height: 34px; border-radius: 50%; background: #fff; color: var(--ink); display: grid; place-items: center; font-family: Inter; font-size: 18px; }
@@ -82,7 +87,7 @@
   .strip { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 48px; padding-bottom: 56px; }
   .strip div { padding: 0 24px; border-left: 1px solid var(--line); }
   .strip div:first-child { padding-left: 0; border-left: 0; }
-  .strip h3 { font-family: Anton, sans-serif; font-weight: 400; font-size: 18px; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 10px; }
+  .strip strong { display: block; font-family: Anton, sans-serif; font-weight: 400; font-size: 18px; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 10px; }
   .strip p { font-family: "Instrument Serif", serif; font-size: 16px; color: var(--muted); line-height: 1.3; }
 
 
@@ -205,13 +210,13 @@
   .about blockquote em { color: var(--accent); }
   .about p.body { font-size: 18px; line-height: 1.65; color: var(--muted); margin-bottom: 16px; max-width: 560px; }
   .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
-  .values h4 { font-family: Anton, sans-serif; font-weight: 400; font-size: 18px; text-transform: uppercase; margin-bottom: 6px; }
+  .values h3 { font-family: Anton, sans-serif; font-weight: 400; font-size: 18px; text-transform: uppercase; margin-bottom: 6px; }
   .values p { font-family: "Instrument Serif", serif; font-size: 18px; color: var(--muted); line-height: 1.3; }
 
 
   /* Experience */
   .exp { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--line); }
-  .exp h4.label { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-family: Inter; font-weight: 500; margin-bottom: 12px; }
+  .exp h3.label { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-family: Inter; font-weight: 500; margin-bottom: 12px; }
   .exp-row { display: grid; grid-template-columns: 1fr auto; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
   .exp-row b { font-family: Anton, sans-serif; font-weight: 400; font-size: 20px; text-transform: uppercase; }
   .exp-row span { font-family: "Instrument Serif", serif; font-size: 18px; color: var(--muted); }
@@ -315,7 +320,7 @@
   .contact a:focus-visible, .work a:focus-visible, .trust a:focus-visible { outline-color: var(--accent-on-dark); }
 
   /* Mobile nav contact pill */
-  .nav-cta { display: none; font-family: Anton, sans-serif; font-size: 14px; letter-spacing: .04em; text-decoration: none; background: var(--ink); color: var(--on-dark); padding: 9px 16px; border-radius: 999px; }
+  .nav-cta { display: none; font-family: Anton, sans-serif; font-size: 14px; text-transform: uppercase; letter-spacing: .04em; text-decoration: none; background: var(--ink); color: var(--on-dark); padding: 9px 16px; border-radius: 999px; }
   @media (max-width: 900px) { .nav-cta { display: inline-block; } }
 
   /* Automation examples (inside Work) */
@@ -344,16 +349,16 @@
   /* =========================================================
      V2: award-style layer (from Kabeer's design video notes)
      ========================================================= */
-  :root { --ease-out: cubic-bezier(.2,.7,.2,1); --ease-io: cubic-bezier(.76,0,.24,1); --intro: 1300ms; }
+  :root { --ease-out: cubic-bezier(.2,.7,.2,1); --ease-io: cubic-bezier(.76,0,.24,1); --intro: 800ms; }
 
   /* 1. Loader: the logo pieces lock together ("problem solved"), then panels slide up one by one */
-  .loader { position: fixed; inset: 0; z-index: 100; display: grid; grid-template-columns: repeat(5, 1fr); pointer-events: none; animation: loader-off 0s linear 2.4s forwards; }
-  .loader i { background: var(--dark); transform-origin: top; animation: panel-up .9s var(--ease-io) forwards; animation-delay: calc(950ms + var(--k) * 70ms); }
-  .loader-mark { position: absolute; inset: 0; display: grid; place-items: center; color: var(--on-dark); animation: mark-out .5s var(--ease-io) 800ms forwards; }
+  .loader { position: fixed; inset: 0; z-index: 100; display: grid; grid-template-columns: repeat(5, 1fr); pointer-events: none; animation: loader-off 0s linear 1.6s forwards; }
+  .loader i { background: var(--dark); transform-origin: top; animation: panel-up .7s var(--ease-io) forwards; animation-delay: calc(600ms + var(--k) * 60ms); }
+  .loader-mark { position: absolute; inset: 0; display: grid; place-items: center; color: var(--on-dark); animation: mark-out .35s var(--ease-io) 520ms forwards; }
   .loader-mark svg { width: 96px; height: 96px; overflow: visible; }
-  .loader-mark .pa { animation: piece-a .7s var(--ease-out) both; }
-  .loader-mark .pb { animation: piece-b .7s var(--ease-out) both; }
-  .loader-mark .pc { transform-origin: 100px 100px; animation: piece-c .4s var(--ease-out) .45s both; }
+  .loader-mark .pa { animation: piece-a .5s var(--ease-out) both; }
+  .loader-mark .pb { animation: piece-b .5s var(--ease-out) both; }
+  .loader-mark .pc { transform-origin: 100px 100px; animation: piece-c .3s var(--ease-out) .3s both; }
   @keyframes piece-a { from { transform: translate(-60px, -60px); opacity: 0; } }
   @keyframes piece-b { from { transform: translate(60px, 60px); opacity: 0; } }
   @keyframes piece-c { from { transform: scale(0); } }
@@ -488,23 +493,39 @@
     .nodes i { min-width: 6px; margin: 0 3px; }
     .c2 { left: 16px; bottom: 40px; }
   }
+  /* Fixes (Nov 24): mobile menu, about monogram */
+  .nav-right { display: flex; align-items: center; gap: 8px; }
+  .menu-btn { display: none; font: 400 14px/1 Anton, sans-serif; letter-spacing: .04em; text-transform: uppercase; color: var(--ink); background: none; border: 1.5px solid var(--ink); border-radius: 999px; padding: 0 16px; height: 40px; cursor: pointer; }
+  .mobile-menu { display: none; }
+  @media (max-width: 900px) {
+    .menu-btn { display: inline-block; }
+    .nav-cta { height: 40px; line-height: 22px; }
+    .mobile-menu:not([hidden]) { display: flex; flex-direction: column; padding-bottom: 12px; }
+    .mobile-menu a { font-family: Anton, sans-serif; font-size: 28px; text-transform: uppercase; text-decoration: none; padding: 12px 0; border-top: 1px solid var(--line); }
+    .about-photo { max-width: 300px; }
+  }
+  .win .bar .ill { margin-left: auto; font-style: normal; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  .about-mk { position: absolute; inset: 0; display: grid; place-items: center; font-family: Anton, sans-serif; font-size: 120px; color: var(--on-dark); }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<div class="loader" aria-hidden="true"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i></div>
+<div class="loader" aria-hidden="true"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><div class="loader-mark"><svg viewBox="0 0 200 200"><path class="pa" d="M40 120V40h80" fill="none" stroke="currentColor" stroke-width="22"/><path class="pb" d="M160 80v80H80" fill="none" stroke="currentColor" stroke-width="22"/><rect class="pc" x="84" y="84" width="32" height="32" fill="currentColor"/></svg></div></div>
 
 <div class="topbar">
   <nav class="wrap" aria-label="Main">
     <a class="brand-x" href="#" aria-label="Muhammad Kabeer, home"><span class="mk">MK</span></a>
     <div class="links"><a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
-    <a class="nav-cta" href="#contact">Contact</a>
+    <div class="nav-right"><a class="nav-cta" href="#contact">Contact</a><button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu</button></div>
   </nav>
+  <div class="mobile-menu wrap" id="mobile-menu" hidden><a href="#about">About</a><a href="#work">Work</a><a href="#services">Services</a><a href="#process">Process</a><a href="#contact">Contact</a></div>
 </div>
 
-<header class="wrap">
+<main id="main">
+<div class="wrap">
 
-  <section class="hero" id="main">
+  <section class="hero" aria-label="Intro">
     <div>
       <p class="hello serif">Hey. I'm Kabeer,</p>
       <h1 class="display"><span class="m"><span class="w" style="--i:0">Software</span></span><em class="serif-i"><span class="m"><span class="w" style="--i:1">&amp;</span></span> <span class="m"><span class="w" style="--i:2">AI</span></span> <span class="m"><span class="w" style="--i:3">automation</span></span></em><span class="m"><span class="w" style="--i:4">engineer</span></span></h1>
@@ -513,7 +534,7 @@
     </div>
     <div class="show" aria-hidden="true">
       <div class="win">
-        <div class="bar"><i></i><i></i><i></i><span>dashboards · portals · stores</span></div>
+        <div class="bar"><i></i><i></i><i></i><span>dashboards · portals · stores</span><em class="ill">Illustration</em></div>
         <div class="scr">
           <div class="scr-top"><b></b><em></em><em></em><em></em></div>
           <div class="dash">
@@ -523,7 +544,6 @@
             <div class="chart"><svg viewBox="0 0 300 90" preserveAspectRatio="none"><path d="M0 70 C 40 60, 60 30, 100 40 S 160 75, 200 45 S 260 15, 300 20 L300 90 L0 90 Z" fill="#235347" opacity=".18"/><path d="M0 70 C 40 60, 60 30, 100 40 S 160 75, 200 45 S 260 15, 300 20" fill="none" stroke="#235347" stroke-width="3"/></svg></div>
             <div class="list"><p></p><p></p><p></p><p></p></div>
           </div>
-          <span class="scr-tag">Illustration</span>
         </div>
       </div>
       <div class="flow">
@@ -541,12 +561,12 @@
   </section>
 
   <div class="strip">
-    <div><h3>Web apps</h3><p>The platform your business needs, built to grow.</p></div>
-    <div><h3>Project rescue</h3><p>Your stuck project, finished and live.</p></div>
-    <div><h3>AI automation</h3><p>Stop doing the same task by hand every day.</p></div>
-    <div><h3>Ongoing support</h3><p>Fixes and new features when you need them.</p></div>
+    <div><strong>Web apps</strong><p>The platform your business needs, built to grow.</p></div>
+    <div><strong>Project rescue</strong><p>Your stuck project, finished and live.</p></div>
+    <div><strong>AI automation</strong><p>Stop doing the same task by hand every day.</p></div>
+    <div><strong>Ongoing support</strong><p>Fixes and new features when you need them.</p></div>
   </div>
-</header>
+</div>
 
 <div class="trust">
   <ul class="wrap">
@@ -567,20 +587,20 @@
 <!-- About -->
 <section id="about" class="about sec">
   <div class="wrap about-grid">
-    <div class="about-photo" aria-hidden="true"><span style="position:absolute;inset:0;display:grid;place-items:center;font-family:Anton,sans-serif;font-size:120px;color:#235347">MK</span></div>
+    <div class="about-photo" aria-hidden="true"><span class="about-mk">MK</span></div>
     <div>
-      <p class="eyebrow">About me</p>
+      <h2 class="eyebrow">About me</h2>
       <blockquote>I like hard problems. <em>Most of them can be solved with good software.</em></blockquote>
       <p class="body">I'm Kabeer, a software engineer from Rawalpindi, Pakistan. For the last 3+ years I've been building web apps with Laravel and React, including 10 months as a Laravel developer at Hexafume, a software house, and more recently AI automations with n8n and OpenAI.</p>
       <div class="exp">
-        <h4 class="label">Experience</h4>
+        <h3 class="label">Experience</h3>
         <div class="exp-row"><b>Hexafume</b><span class="when">Sep 2025 – Jun 2026</span><span>Laravel developer at a software house. Built and maintained web apps for its clients (details under NDA).</span></div>
         <div class="exp-row"><b>Freelance</b><span class="when">Project</span><span>Built an online marketplace platform end to end</span></div>
       </div>
       <div class="values">
-        <div><h4>Based in</h4><p>Rawalpindi, Pakistan. Working remotely.</p></div>
-        <div><h4>Studying</h4><p>BS Software Engineering, NUML.</p></div>
-        <div><h4>How I work</h4><p>Straight talk, clear updates, you own the code.</p></div>
+        <div><h3>Based in</h3><p>Rawalpindi, Pakistan. Working remotely.</p></div>
+        <div><h3>Studying</h3><p>BS Software Engineering, NUML.</p></div>
+        <div><h3>How I work</h3><p>Straight talk, clear updates, you own the code.</p></div>
       </div>
     </div>
   </div>
@@ -603,7 +623,7 @@
         <h3 class="display">Online marketplace platform</h3>
         <p class="sub serif">Vehicle &amp; marine sales for a Bahamas-based business</p>
         <dl>
-          <dt>Need</dt><dd>The business needed its own online platform where buyers and sellers across the islands could list, find and bid on vehicles and boats.</dd>
+          <dt>Need</dt><dd>The business needed its own online platform where buyers and sellers across the islands could list and find vehicles and boats.</dd>
           <dt>What I built</dt><dd>The full platform end to end, from the database to the screens buyers and sellers use.</dd>
           <dt>Result</dt><dd>Live in production.</dd>
         </dl>
@@ -611,8 +631,8 @@
         <div class="facts-row"><div><b>1</b><span>developer, end to end</span></div><div><b>Live</b><span>in production</span></div><div><b>2-sided</b><span>buyers and sellers</span></div></div>
       </div>
       <div class="gallery">
-        <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="images/work-marketplace-home.webp" width="1831" height="873" alt="Marketplace home page with search by make, model, year and island" loading="lazy"></div>
-        <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="images/work-marketplace-listing.webp" width="1665" height="859" alt="Listing page with photo gallery, live countdown and bidding panel" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="images/work-marketplace-home.webp" width="1831" height="700" alt="Marketplace home page with search by make, model, year and island" loading="lazy"></div>
+        <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="images/work-marketplace-listing.webp" width="1105" height="859" alt="Vehicle listing page with condition badges and a photo gallery" loading="lazy"></div>
         <div class="shot"><div class="bar"><i></i><i></i><i></i></div><img src="images/work-marketplace-details.webp" width="1890" height="663" alt="Vehicle details table and damage diagram" loading="lazy"></div>
       </div>
     </article>
@@ -620,7 +640,8 @@
     <!-- AI RECEPTIONIST DEMO: hidden until a REAL recording exists. To show it:
          1) put the video at videos/ai-receptionist-demo.mp4 and a still frame at images/ai-receptionist-poster.webp
          2) fill in the "What it did" line with what really happens in the call
-         3) delete the word hidden from the <article> tag below -->
+         3) add poster="images/ai-receptionist-poster.webp" to the <video> tag
+         4) delete the word hidden from the <article> tag below -->
     <article class="case" id="demo" hidden>
       <div>
         <span class="case-num">02 / AI automation <span class="badge">Demo</span></span>
@@ -633,7 +654,7 @@
         </dl>
         <div class="tags"><span>Voice AI</span><span>n8n</span><span>OpenAI</span></div>
       </div>
-      <div class="shot"><div class="bar"><i></i><i></i><i></i></div><video controls preload="none" playsinline poster="images/ai-receptionist-poster.webp" width="1280" height="720"><source src="videos/ai-receptionist-demo.mp4" type="video/mp4">Your browser can't play this video.</video></div>
+      <div class="shot"><div class="bar"><i></i><i></i><i></i></div><video controls preload="none" playsinline width="1280" height="720"><source src="videos/ai-receptionist-demo.mp4" type="video/mp4">Your browser can't play this video.</video></div>
     </article>
 
     <div class="autos">
@@ -744,6 +765,17 @@
     </footer>
   </div>
 </section>
+</main>
 
+<script>
+  // Mobile menu: open/close, close on link tap or Escape
+  (function () {
+    var btn = document.querySelector('.menu-btn'), menu = document.getElementById('mobile-menu');
+    function set(open) { btn.setAttribute('aria-expanded', open); menu.hidden = !open; btn.textContent = open ? 'Close' : 'Menu'; }
+    btn.addEventListener('click', function () { set(menu.hidden); });
+    menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') set(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !menu.hidden) { set(false); btn.focus(); } });
+  })();
+</script>
 </body>
 </html>
